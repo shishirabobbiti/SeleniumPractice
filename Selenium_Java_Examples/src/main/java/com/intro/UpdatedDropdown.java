@@ -11,6 +11,26 @@ public class UpdatedDropdown {
 	public static void main(String[] args) throws InterruptedException {
 		WebDriver driver = new ChromeDriver();
 		driver.get("https://rahulshettyacademy.com/dropdownsPractise/");
+		Assert.assertFalse(driver.findElement(By.xpath("//input[contains(@id,'SeniorCitizenDiscount')]")).isSelected());
+		//System.out.println(driver.findElement(By.xpath("//input[contains(@id,'SeniorCitizenDiscount')]")).isSelected());
+		driver.findElement(By.xpath("//input[contains(@id,'SeniorCitizenDiscount')]")).click();
+		//System.out.println(driver.findElement(By.xpath("//input[contains(@id,'SeniorCitizenDiscount')]")).isSelected());
+		Assert.assertTrue(driver.findElement(By.xpath("//input[contains(@id,'SeniorCitizenDiscount')]")).isSelected());
+		//check how many checkboxes
+		System.out.println("checkboxes " + driver.findElements(By.xpath("//input[@type='checkbox']")).size());
+		//Assert.assertTrue(driver.findElement(By.xpath("//input[@name='ctl00$mainContent$view_date2']")).isEnabled());
+		System.out.println(driver.findElement(By.id("Div1")).getAttribute("style"));
+		driver.findElement(By.xpath("//input[@id='ctl00_mainContent_rbtnl_Trip_1']")).click();
+		//Assert.assertTrue(driver.findElement(By.xpath("//input[@name='ctl00$mainContent$view_date2']")).isEnabled());
+		System.out.println(driver.findElement(By.id("Div1")).getAttribute("style"));
+		if(driver.findElement(By.id("Div1")).getAttribute("style").contains("1"))
+       {
+		 Assert.assertTrue(true);
+		 System.out.println("Its enabled");
+       }
+		else{
+		  Assert.assertFalse(true);
+		}
 		driver.findElement(By.id("divpaxinfo")).click();
 		Thread.sleep(1000);
 		String value1= driver.findElement(By.id("divpaxinfo")).getText();

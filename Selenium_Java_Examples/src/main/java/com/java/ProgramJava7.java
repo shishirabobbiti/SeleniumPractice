@@ -8,11 +8,11 @@ public class ProgramJava7 {
 		
 		Scanner sc = new Scanner(System.in);
 		System.out.println("Enter Number value");
-		int Num = sc.nextInt();
+		int num = sc.nextInt();
        int sum=0;
-		  while(Num!=0){
-			  sum=sum+Num%10;
-				Num=Num/10;
+		  while(num!=0){
+			  sum=sum+num%10;
+				num=num/10;
 				}
 			System.out.print(sum);
 		}
