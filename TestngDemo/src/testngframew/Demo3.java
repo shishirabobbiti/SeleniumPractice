@@ -14,7 +14,7 @@ public class Demo3 {
 	@Test
 	public void Weblogincar() {
 		
-		System.out.println("Weblogincar");
+		System.out.println("Weblogincar_123");
 	}
 	@BeforeClass
 	public void beforeclass()
