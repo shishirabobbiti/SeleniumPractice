@@ -11,6 +11,8 @@ import java.util.List;
 import java.util.Properties;
 
 import org.apache.commons.io.FileUtils;
+import org.openqa.selenium.OutputType;
+import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.edge.EdgeDriver;
@@ -74,6 +76,15 @@ public class BaseTest {
 	//{map, map}
 
 	}
+	
+	public void getScreenshot() throws IOException {
+		
+		TakesScreenshot ts=(TakesScreenshot)driver;
+		File source=ts.getScreenshotAs(OutputType.FILE);
+		File destfile=new File("src\\main\\java\\com\\reports\\failed.png");
+	    FileUtils.copyFile(source, destfile);
+		
+	}
 	@BeforeMethod(alwaysRun=true)
     public HomePage launchApplication() {
     	
@@ -89,8 +100,6 @@ public class BaseTest {
 	   driver.quit();
 	   
    }
-   
- 
 	
     }
 
