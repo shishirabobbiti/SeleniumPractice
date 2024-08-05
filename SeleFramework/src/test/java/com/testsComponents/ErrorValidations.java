@@ -9,17 +9,18 @@ import org.testng.annotations.Test;
 import com.pageobjects.CartPage;
 import com.pageobjects.ProductCatalogue;
 import com.tests.BaseTest;
+import com.tests.Retry;
 
 import junit.framework.Assert;
 
 
 public class ErrorValidations extends BaseTest {
 
-	@Test(groups={"ErrorHandling"})
+	@Test(groups={"ErrorHandling"},retryAnalyzer = Retry.class)
 	public void loginErrorvaliations() {
 
 	     homePage.loginApplication("shishir@gmail.com", "Shishira@123");
-		Assert.assertEquals(homePage.getErrorMessage(), "Incorrect email or password.");
+		Assert.assertEquals(homePage.getErrorMessage(), "Incorrect email  password.");
 
 	}
 @Test

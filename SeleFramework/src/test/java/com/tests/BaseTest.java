@@ -77,12 +77,13 @@ public class BaseTest {
 
 	}
 	
-	public void getScreenshot() throws IOException {
+	public String getScreenshot(String testcaseName,WebDriver driver) throws IOException {
 		
 		TakesScreenshot ts=(TakesScreenshot)driver;
-		File source=ts.getScreenshotAs(OutputType.FILE);
-		File destfile=new File("src\\main\\java\\com\\reports\\failed.png");
-	    FileUtils.copyFile(source, destfile);
+		File sourceFile=ts.getScreenshotAs(OutputType.FILE);
+		File destFile=new File(System.getProperty("user.dir")+"//reports//" +testcaseName+ ".png");
+	    FileUtils.copyFile(sourceFile, destFile);
+		return System.getProperty("user.dir")+"//reports//" +testcaseName+ ".png";
 		
 	}
 	@BeforeMethod(alwaysRun=true)
