@@ -1,5 +1,8 @@
 package com.testsComponents;
 
+import static org.testng.Assert.assertEquals;
+import static org.testng.Assert.assertTrue;
+
 import java.io.IOException;
 import java.util.HashMap;
 import java.util.List;
@@ -15,6 +18,7 @@ import com.pageobjects.ConfirmationPage;
 import com.pageobjects.OrderPage;
 import com.pageobjects.ProductCatalogue;
 import com.tests.BaseTest;
+import org.junit.*;
 
 
 public class StandloneTest extends BaseTest {
@@ -33,12 +37,13 @@ public class StandloneTest extends BaseTest {
 		CartPage cartPage=productCatalogue.goToCart();
 		Thread.sleep(2000);
 		boolean match = cartPage.verifyProductDisplay(input.get("productName"));	
-		Assert.assertTrue(match);
+		System.out.println(match);
+		assertTrue(match);
 		Checkout checkoutPage=cartPage.clickOnCheckout();
 		checkoutPage.selectCountry();
 		ConfirmationPage confirmationPage=checkoutPage.clickOnPlaceOrder();
 		String confirmationmsg=confirmationPage.getConfirmationMessage();
-		Assert.assertEquals(confirmationmsg, "THANKYOU FOR THE ORDER.");
+		assertEquals(confirmationmsg, "THANKYOU FOR THE ORDER.");
 			}
 	
 	
@@ -47,7 +52,7 @@ public class StandloneTest extends BaseTest {
 		ProductCatalogue productCatalogue =homePage.loginApplication("shishira@gmail.com", "Shishira@123");
 		OrderPage orderPage = productCatalogue.goToOrders();
 		boolean match=orderPage.verifyOrderDisplay("ZARA COAT 3");
-		Assert.assertTrue(match);
+		assertTrue(match);
 		
 	}
 	@DataProvider
