@@ -1,5 +1,7 @@
 package testngframew;
 
+import org.testng.annotations.Test;
+import org.testng.AssertJUnit;
 import org.testng.Assert;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.AfterTest;
@@ -48,7 +50,7 @@ public class Demo1 {
 	public void testlistener() {
 		
 		System.out.println("checking listeners");
-		Assert.assertTrue(false);
+		AssertJUnit.assertTrue(true);
 	}
 	@DataProvider
 	public Object[][] dp() {

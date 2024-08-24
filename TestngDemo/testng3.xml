@@ -8,10 +8,10 @@
 </run>
 </groups>
  <classes>
-   <class name="Testngframew.Demo1"/>
-   <class name="Testngframew.Demo2"/>
-   <class name="Testngframew.Demo3"/>
-   <class name="Testngframew.Demo4"/>
+   <class name="testngframew.Demo1"/>
+   <class name="testngframew.Demo2"/>
+   <class name="testngframew.Demo3"/>
+   <class name="testngframew.Demo4"/>
  </classes>   
     
   </test>

@@ -5,6 +5,7 @@ import java.util.List;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
@@ -37,7 +38,9 @@ WebDriver driver;
 	}
 	
 	public Checkout clickOnCheckout() {
-		checkoutbutton.click();
+		//checkoutbutton.click();
+		 Actions actions = new Actions(driver);
+		 actions.click(checkoutbutton).perform();
 		Checkout checkout= new Checkout(driver);
 		return checkout;
 		

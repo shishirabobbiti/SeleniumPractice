@@ -1,8 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
-  <test thread-count="5" name="Default test(failed)">
+<suite name="Failed suite [Loan Department]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="Personal Loan(failed)">
     <classes>
+      <class name="testngframew.Demo1">
+        <methods>
+          <include name="beforetest"/>
+          <include name="aftertest"/>
+          <include name="test"/>
+          <include name="sectest"/>
+        </methods>
+      </class> <!-- testngframew.Demo1 -->
       <class name="testngframew.Demo3">
         <methods>
           <include name="nissancarloan"/>
@@ -17,5 +25,5 @@
         </methods>
       </class> <!-- testngframew.Demo3 -->
     </classes>
-  </test> <!-- Default test(failed) -->
-</suite> <!-- Failed suite [Default suite] -->
+  </test> <!-- Personal Loan(failed) -->
+</suite> <!-- Failed suite [Loan Department] -->

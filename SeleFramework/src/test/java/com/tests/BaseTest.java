@@ -15,6 +15,7 @@ import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.support.PageFactory;
@@ -38,8 +39,12 @@ public class BaseTest {
     try (InputStream input = new FileInputStream("src\\main\\java\\com\\resources\\GlobalData.properties")) {
 	properties.load(input);
 	String browserName = properties.getProperty("browser");
-	if (browserName.equals("chrome")) {
-		driver = new ChromeDriver();
+	
+	if (browserName.equals("chrome")) {	
+		ChromeOptions options=new ChromeOptions();
+		options.addArguments("headless");
+	
+		driver = new ChromeDriver(options);
 	} else if (browserName.equals("Firefox")) {
 		driver = new FirefoxDriver();
 
