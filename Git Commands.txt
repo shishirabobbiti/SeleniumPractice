@@ -1,0 +1,12 @@
+New Repository:
+git init -initilization
+git add README.md  -
+git commit -m "first commit"
+git branch -M main
+git remote add origin https://github.com/shishirabobbiti/test.git
+git push -u origin main
+
+Existing 
+git remote add origin https://github.com/shishirabobbiti/test.git
+git branch -M main
+git push -u origin main
