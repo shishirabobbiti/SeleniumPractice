@@ -3,7 +3,7 @@
 Feature: Error validations
   I want to use this template for my feature file
 
-  @tag1
+  @Errorvalidations
   Scenario: Title of your scenario
     Given I landed on Ecommerce page
     When Logged in with username <name> and password <password>
