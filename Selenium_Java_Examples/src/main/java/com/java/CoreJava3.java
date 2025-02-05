@@ -19,12 +19,13 @@ public class CoreJava3 {
 	//to print the string into char's
 	for(int i=0;i<s.length();i++)
 	{
-		System.out.println(s.charAt(i));  
+		System.out.print(s.charAt(i));  
 	}
+	System.out.println();  
 	//revese the string
 	for(int i=s.length()-1;i>=0;i--)
 	{
-		System.out.println(s.charAt(i));
+		System.out.print(s.charAt(i));
 	}
 		
 		

@@ -22,7 +22,7 @@ public class Assignment7 {
 		driver.findElement(By.xpath("//input[@id='alertbtn']")).click();
 		String alertdata = driver.switchTo().alert().getText();
 		Assert.assertEquals(alertdata,"Hello Option3, share this practice page and share your knowledge");
-		driver.quit();
+		//driver.quit();
 
 	}
 

@@ -25,16 +25,23 @@ public class CoreJava {
       
       //For loops
       //arr.length-5
-      
+      System.out.println();
       for(int i=0;i<arr.length;i++)
       {
-    	  System.out.println(arr[i]);
+    	  System.out.print(arr[i]);
       }
+      System.out.println();
       for(int i=0;i<arr2.length;i++)
       {
-    	  System.out.println(arr2[i]);
+    	  System.out.print(arr2[i]);
     	  
       }
+      System.out.println();
+      for(int ele :arr2) {
+    	  System.out.print(ele);
+    	  
+      }
+      System.out.println();
       String[] names= {"Shishira","Mike","Maruthi"};
       for(int i=0;i<names.length;i++)
       {

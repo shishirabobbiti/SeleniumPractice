@@ -8,7 +8,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 
 public class Locators {
 
-	public static void main(String[] args) {
+	public static void main(String[] args) throws InterruptedException {
 		WebDriver driver = new ChromeDriver();
 		// Implict wait ->to wait browser for specified time
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
@@ -28,7 +28,8 @@ public class Locators {
 		driver.findElement(By.xpath("//div[@class='forgot-pwd-btn-conainer']/button[1]")).click();//parent-child
 		driver.findElement(By.xpath("//input[@id='inputUsername']")).sendKeys("Shishira Reddy");
 		driver.findElement(By.xpath("//input[contains(@type,'pass')]")).sendKeys("rahulshettyacademy");
-		driver.findElement(By.xpath("//div[@class='checkbox-container']/span[1]/input[1]")).click();//parent-child
+		Thread.sleep(2000);
+		driver.findElement(By.xpath("//div[@class='checkbox-container']/span[2]/input[1]")).click();//parent-child
 		driver.findElement(By.xpath("//button[contains(@class,'submit')]")).click();//Regular expression
 		
 		

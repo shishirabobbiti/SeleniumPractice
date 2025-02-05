@@ -23,7 +23,7 @@ public class Assignment3 {
 		driver.findElement(By.xpath("//input[@id='exampleCheck1']")).click();
 		WebElement Genderdropdown = driver.findElement(By.id("exampleFormControlSelect1"));
 		Select dropdown=new Select(Genderdropdown);
-		dropdown.selectByVisibleText("Female");
+		dropdown.selectByVisibleText("Male");
 		driver.findElement(By.xpath("//input[@id='inlineRadio2']")).click();
 		driver.findElement(By.xpath("//input[@name='bday']")).sendKeys("01/21/2000");
 		driver.findElement(By.xpath("//input[@value='Submit']")).click();

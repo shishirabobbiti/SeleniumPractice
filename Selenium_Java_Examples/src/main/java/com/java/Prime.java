@@ -1,7 +1,9 @@
 package com.java;
 import java.util.Scanner;
 public class Prime {
+	
 	public static void main(String[] args) {
+		int [] j= {2,3,3,4,5,7,8};
 		Scanner sc = new Scanner(System.in);
 		System.out.println("Enter Number");
 		int num = sc.nextInt();
@@ -22,5 +24,10 @@ public class Prime {
 	}
 		else
 			System.out.println("invalid number");
-}
-}
+	
+		
+	
+	}
+	}
+
+

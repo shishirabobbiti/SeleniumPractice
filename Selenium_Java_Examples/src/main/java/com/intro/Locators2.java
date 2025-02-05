@@ -11,8 +11,8 @@ import org.testng.Assert;
 public class Locators2 {
 
 	public static void main(String[] args) throws InterruptedException {
-		//WebDriver driver = new ChromeDriver();
-		WebDriver driver= new EdgeDriver();
+		WebDriver driver = new ChromeDriver();
+		//WebDriver driver= new EdgeDriver();
 		String name="Shishira Reddy";
 		
 		// Implict wait ->to wait browser for specified time
