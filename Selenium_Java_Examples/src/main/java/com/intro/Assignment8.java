@@ -17,13 +17,14 @@ public class Assignment8 {
 		js.executeScript("window.scrollBy(0,500)");
 		int rows = driver.findElements(By.xpath("//table[@name='courses']//tr")).size();
 		System.out.println("Rows " + rows);
-        int columns=driver.findElements(By.xpath("//table[@name='courses']//th")).size();
-        System.out.println("Columns "+ columns);
-       // System.out.println(driver.findElement(By.xpath("//table[@name='courses']//tr [3]")).getText()); //data is printed in single row
-        List<WebElement> secondrow=driver.findElements(By.xpath("//table[@name='courses']//tr[3]//td"));
-        for(int i=0;i<secondrow.size();i++) {
-        	 System.out.println(secondrow.get(i).getText());      
-        	 }
+		int columns = driver.findElements(By.xpath("//table[@name='courses']//th")).size();
+		System.out.println("Columns " + columns);
+		// System.out.println(driver.findElement(By.xpath("//table[@name='courses']//tr
+		// [3]")).getText()); //data is printed in single row
+		List<WebElement> secondrow = driver.findElements(By.xpath("//table[@name='courses']//tr[3]//td"));
+		for (int i = 0; i < secondrow.size(); i++) {
+			System.out.println(secondrow.get(i).getText());
+		}
 //        System.out.println(secondrow.get(0).getText());
 //        System.out.println(secondrow.get(1).getText());
 //        System.out.println(secondrow.get(2).getText());

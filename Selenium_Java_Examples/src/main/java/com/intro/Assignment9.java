@@ -18,16 +18,19 @@ public class Assignment9 {
 		driver.findElement(By.xpath("//input[@class='inputs ui-autocomplete-input']")).sendKeys("Uni");
 		Thread.sleep(3000);
 		List<WebElement> items = driver.findElements(By.xpath("//ul[@id='ui-id-1']//li"));
-		//System.out.println(items.size());
+		// System.out.println(items.size());
 
 		for (int i = 0; i < items.size(); i++) {
-			if (items.get(i).getText().equalsIgnoreCase("United Kingdom (UK)"))
+			WebElement it=items.get(i);
+			if (it.getText().equalsIgnoreCase("United Kingdom (UK)"))
+
+			{   
 				
-			{
-				String item = items.get(i).getText();
-				items.get(i).click();
-				
-				Assert.assertEquals(item,"United Kingdom (UK)");
+				String item = it.getText();
+				it.click();
+				//System.out.println(item);
+
+				Assert.assertEquals(item, "United Kingdom (UK)");
 				break;
 			}
 		}

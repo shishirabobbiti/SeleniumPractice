@@ -36,9 +36,9 @@ public class Newwindow {
 		// webelement screenshot
 		File src = name.getScreenshotAs(OutputType.FILE);
 		FileHandler.copy(src, new File("logo.png"));
-		//Get Height  width
+		// Get Height width
 		System.out.println(name.getRect().getDimension().getHeight());
-        System.out.println(name.getRect().getDimension().getWidth());
+		System.out.println(name.getRect().getDimension().getWidth());
 	}
 
 }

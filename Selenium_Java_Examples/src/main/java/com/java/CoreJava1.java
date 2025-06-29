@@ -46,6 +46,7 @@ public class CoreJava1 {
 	      //Convert traditional array to arraylist
 	      List<String>namesarraylist=Arrays.asList(names);
 	      System.out.println(namesarraylist.contains("Mike"));
+	      System.out.println(namesarraylist);
 	}
 
 }

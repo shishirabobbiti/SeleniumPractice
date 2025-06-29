@@ -1,4 +1,4 @@
-package com.intro;
+ package com.intro;
 
 import java.util.List;
 
@@ -24,7 +24,8 @@ public class JavascriptexecutorDemo {
 			sum = sum + Integer.parseInt(amount.get(i).getText());
 		}
 		System.out.println(sum);
-		int expectedamount=Integer.parseInt(driver.findElement(By.xpath("//div[@class='totalAmount']")).getText().split(":")[1].trim());
+		int expectedamount = Integer
+				.parseInt(driver.findElement(By.xpath("//div[@class='totalAmount']")).getText().split(":")[1].trim());
 		Assert.assertEquals(sum, expectedamount);
 	}
 

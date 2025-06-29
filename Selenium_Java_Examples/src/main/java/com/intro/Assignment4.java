@@ -29,7 +29,7 @@ public class Assignment4 {
 		dropdown.selectByValue("consult");
 		driver.findElement(By.xpath("//input[@id='signInBtn']")).click();
 		w.until(ExpectedConditions.titleIs("ProtoCommerce"));
-		//System.out.println(driver.getTitle());
+		// System.out.println(driver.getTitle());
 		List<WebElement> products = driver.findElements(By.xpath("//button[@class='btn btn-info']"));
 		for (int i = 0; i < products.size(); i++) {
 			products.get(i).click();

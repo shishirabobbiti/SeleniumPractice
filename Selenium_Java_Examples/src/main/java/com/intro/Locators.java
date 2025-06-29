@@ -20,19 +20,19 @@ public class Locators {
 		driver.findElement(By.linkText("Forgot your password?")).click();
 		driver.findElement(By.xpath("//input[@placeholder='Name']")).sendKeys("Shishira Reddy");
 		driver.findElement(By.xpath("//input[@placeholder='Email']")).sendKeys("joshn@bdns.com");
-		driver.findElement(By.xpath("//input[@type='text'][2]")).clear();//indexing way
+		driver.findElement(By.xpath("//input[@type='text'][2]")).clear();// indexing way
 		driver.findElement(By.xpath("//input[@placeholder='Email']")).sendKeys("johnson@gmail.com");
 		driver.findElement(By.xpath("//input[@placeholder='Phone Number']")).sendKeys("5678901234");
 		driver.findElement(By.xpath("//button[@class='reset-pwd-btn']")).click();
 		System.out.println(driver.findElement(By.xpath("//p[@class='infoMsg']")).getText());
-		driver.findElement(By.xpath("//div[@class='forgot-pwd-btn-conainer']/button[1]")).click();//parent-child
+		driver.findElement(By.xpath("//div[@class='forgot-pwd-btn-conainer']/button[1]")).click();// parent-child
 		driver.findElement(By.xpath("//input[@id='inputUsername']")).sendKeys("Shishira Reddy");
 		driver.findElement(By.xpath("//input[contains(@type,'pass')]")).sendKeys("rahulshettyacademy");
 		Thread.sleep(2000);
-		driver.findElement(By.xpath("//div[@class='checkbox-container']/span[2]/input[1]")).click();//parent-child
-		driver.findElement(By.xpath("//button[contains(@class,'submit')]")).click();//Regular expression
-		
-		
+		driver.findElement(By.xpath("//div[@class='checkbox-container']/span[2]/input[1]")).click();// parent-child
+		driver.findElement(By.xpath("//button[contains(@class,'submit')]")).click();// Regular expression
+		driver.quit();
+
 	}
 
 }

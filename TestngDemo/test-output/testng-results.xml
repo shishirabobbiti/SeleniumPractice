@@ -2,27 +2,27 @@
 <testng-results ignored="12" total="15" passed="3" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-08-24T12:46:53 IST" name="Loan Department" finished-at="2024-08-24T12:46:53 IST" duration-ms="121">
+  <suite started-at="2025-03-29T11:25:54 IST" name="Loan Department" finished-at="2025-03-29T11:25:54 IST" duration-ms="76">
     <groups>
       <group name="Smoke">
-        <method signature="Demo3.nissancarloan()[pri:0, instance:testngframew.Demo3@1e1a0406]" name="nissancarloan" class="testngframew.Demo3"/>
-        <method signature="Demo4.audicarloan()[pri:0, instance:testngframew.Demo4@3cebbb30]" name="audicarloan" class="testngframew.Demo4"/>
-        <method signature="Demo4.bmwcarloan()[pri:0, instance:testngframew.Demo4@3cebbb30]" name="bmwcarloan" class="testngframew.Demo4"/>
+        <method signature="Demo3.nissancarloan()[pri:0, instance:testngframew.Demo3@5158b42f]" name="nissancarloan" class="testngframew.Demo3"/>
+        <method signature="Demo4.audicarloan()[pri:0, instance:testngframew.Demo4@595b007d]" name="audicarloan" class="testngframew.Demo4"/>
+        <method signature="Demo4.bmwcarloan()[pri:0, instance:testngframew.Demo4@595b007d]" name="bmwcarloan" class="testngframew.Demo4"/>
       </group> <!-- Smoke -->
     </groups>
-    <test started-at="2024-08-24T12:46:53 IST" name="Regression" finished-at="2024-08-24T12:46:53 IST" duration-ms="121">
+    <test started-at="2025-03-29T11:25:54 IST" name="Regression" finished-at="2025-03-29T11:25:54 IST" duration-ms="76">
       <class name="testngframew.Demo3">
-        <test-method signature="nissancarloan()[pri:0, instance:testngframew.Demo3@1e1a0406]" started-at="2024-08-24T12:46:53 IST" name="nissancarloan" finished-at="2024-08-24T12:46:53 IST" duration-ms="23" status="PASS">
+        <test-method signature="nissancarloan()[pri:0, instance:testngframew.Demo3@5158b42f]" started-at="2025-03-29T11:25:54 IST" name="nissancarloan" finished-at="2025-03-29T11:25:54 IST" duration-ms="16" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- nissancarloan -->
       </class> <!-- testngframew.Demo3 -->
       <class name="testngframew.Demo4">
-        <test-method signature="audicarloan()[pri:0, instance:testngframew.Demo4@3cebbb30]" started-at="2024-08-24T12:46:53 IST" name="audicarloan" finished-at="2024-08-24T12:46:53 IST" duration-ms="3" status="PASS">
+        <test-method signature="audicarloan()[pri:0, instance:testngframew.Demo4@595b007d]" started-at="2025-03-29T11:25:54 IST" name="audicarloan" finished-at="2025-03-29T11:25:54 IST" duration-ms="3" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- audicarloan -->
-        <test-method signature="bmwcarloan()[pri:0, instance:testngframew.Demo4@3cebbb30]" started-at="2024-08-24T12:46:53 IST" name="bmwcarloan" finished-at="2024-08-24T12:46:53 IST" duration-ms="8" status="PASS">
+        <test-method signature="bmwcarloan()[pri:0, instance:testngframew.Demo4@595b007d]" started-at="2025-03-29T11:25:54 IST" name="bmwcarloan" finished-at="2025-03-29T11:25:54 IST" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- bmwcarloan -->

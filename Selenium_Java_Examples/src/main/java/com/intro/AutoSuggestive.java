@@ -16,14 +16,13 @@ public class AutoSuggestive {
 		driver.findElement(By.xpath("//input[@id='autosuggest']")).sendKeys("Ar");
 		Thread.sleep(3000);
 		List<WebElement> options = driver.findElements(By.xpath("//li[@class='ui-menu-item']/a"));
-		
-		for(int i=0;i<options.size();i++)
-		{
-			WebElement option=options.get(i);
-			if(option.getText().equalsIgnoreCase("Aruba")){
-			option.click();
-			break;
-		}
+
+		for (int i = 0; i < options.size(); i++) {
+			WebElement option = options.get(i);
+			if (option.getText().equalsIgnoreCase("Aruba")) {
+				option.click();
+				break;
+			}
 		}
 //		for (WebElement option : options) {
 //			if (option.getText().equalsIgnoreCase("Aruba")) {

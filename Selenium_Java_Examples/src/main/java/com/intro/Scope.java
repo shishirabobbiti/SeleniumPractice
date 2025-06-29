@@ -26,7 +26,7 @@ public class Scope {
 		int columnlinks = columndiver.findElements(By.tagName("a")).size();
 		System.out.println(columnlinks);
 		for (int i = 1; i < columnlinks; i++) {
-			if(i==1) {
+			if (i == 1) {
 				System.out.println(driver.getTitle());
 			}
 			String clinkonTabs = Keys.chord(Keys.CONTROL, Keys.ENTER);
@@ -34,10 +34,10 @@ public class Scope {
 			Thread.sleep(5000);
 			Set<String> windows = driver.getWindowHandles();
 			ArrayList<String> list = new ArrayList<>(windows);
-			driver.switchTo().window(list.get(list.size()-1));//2 windows are present(practice,Rest API)
+			driver.switchTo().window(list.get(list.size() - 1));// 2 windows are present(practice,Rest API)
 			System.out.println(driver.getTitle());
 			driver.switchTo().window(list.get(0));
-			
+
 		}
 	}
 

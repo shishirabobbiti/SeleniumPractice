@@ -32,7 +32,8 @@ public class BrokenLinks {
 			conn.connect();
 			int response = conn.getResponseCode();
 			System.out.println(response);
-			s.assertTrue(response < 400,links.get(i).getText() + response);
+			s.assertTrue(response < 400, links.get(i).getText() + response);
+			
 
 //		if(response>403) 
 //		{

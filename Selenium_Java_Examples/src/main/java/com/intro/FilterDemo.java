@@ -16,8 +16,8 @@ public class FilterDemo {
 		driver.get("https://rahulshettyacademy.com/seleniumPractise/#/offers");
 		driver.findElement(By.xpath("//input[@id='search-field']")).sendKeys("Rice");
 		List<WebElement> items = driver.findElements(By.xpath("//tr//td[1]"));
-       List<String> expectedlist=items.stream().map(s->s.getText()).collect(Collectors.toList());
-		List<String> filteritems = items.stream().map(s->s.getText()).filter(s->s.contains("Rice"))
+		List<String> expectedlist = items.stream().map(s -> s.getText()).collect(Collectors.toList());
+		List<String> filteritems = items.stream().map(s -> s.getText()).filter(s -> s.contains("Rice"))
 				.collect(Collectors.toList());
 
 		Assert.assertEquals(expectedlist, filteritems);

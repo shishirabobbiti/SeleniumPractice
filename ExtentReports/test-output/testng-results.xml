@@ -2,20 +2,20 @@
 <testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-08-24T13:01:05 IST" name="Default suite" finished-at="2024-08-24T13:01:16 IST" duration-ms="10912">
+  <suite started-at="2025-03-29T13:07:13 IST" name="Default suite" finished-at="2025-03-29T13:07:22 IST" duration-ms="8989">
     <groups>
     </groups>
-    <test started-at="2024-08-24T13:01:05 IST" name="Default test" finished-at="2024-08-24T13:01:16 IST" duration-ms="10912">
+    <test started-at="2025-03-29T13:07:13 IST" name="Default test" finished-at="2025-03-29T13:07:22 IST" duration-ms="8989">
       <class name="SeleFramework.ExtentReports.ExtentReportDemo">
-        <test-method is-config="true" signature="ExtentReports()[pri:0, instance:SeleFramework.ExtentReports.ExtentReportDemo@cecf639]" started-at="2024-08-24T13:01:05 IST" name="ExtentReports" finished-at="2024-08-24T13:01:05 IST" duration-ms="454" status="PASS">
+        <test-method is-config="true" signature="ExtentReports()[pri:0, instance:SeleFramework.ExtentReports.ExtentReportDemo@2cd76f31]" started-at="2025-03-29T13:07:13 IST" name="ExtentReports" finished-at="2025-03-29T13:07:13 IST" duration-ms="419" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- ExtentReports -->
-        <test-method signature="intialDemo()[pri:0, instance:SeleFramework.ExtentReports.ExtentReportDemo@cecf639]" started-at="2024-08-24T13:01:05 IST" name="intialDemo" finished-at="2024-08-24T13:01:12 IST" duration-ms="6056" status="PASS">
+        <test-method signature="intialDemo()[pri:0, instance:SeleFramework.ExtentReports.ExtentReportDemo@2cd76f31]" started-at="2025-03-29T13:07:13 IST" name="intialDemo" finished-at="2025-03-29T13:07:19 IST" duration-ms="5495" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- intialDemo -->
-        <test-method signature="secondDemo()[pri:0, instance:SeleFramework.ExtentReports.ExtentReportDemo@cecf639]" started-at="2024-08-24T13:01:12 IST" name="secondDemo" finished-at="2024-08-24T13:01:16 IST" duration-ms="4308" status="PASS">
+        <test-method signature="secondDemo()[pri:0, instance:SeleFramework.ExtentReports.ExtentReportDemo@2cd76f31]" started-at="2025-03-29T13:07:19 IST" name="secondDemo" finished-at="2025-03-29T13:07:22 IST" duration-ms="3017" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- secondDemo -->

@@ -29,29 +29,27 @@ public class StreamDemo {
 		Assert.assertTrue(originallist.equals(sortedlist));
 		// scan the name column with getText ->Beans->print the price of the Rice
 		List<String> price;
-		do
-		{
+		do {
 			List<WebElement> rows = driver.findElements(By.xpath("//tr//td[1]"));
 
 			price = rows.stream().filter(s -> s.getText().contains("Strawberry")).map(s -> getpriceveggie(s))
-		
-				.collect(Collectors.toList());
-		price.forEach(a->System.out.println(a));  //to perform actions on every object
-		price.forEach(a->{
-			a=a+"Maruthi";
-			System.out.println(a);
-		});
-		price.forEach(System.out::println); //to print the Groups of objects
-		if(price.size()<1)
-		{
-			driver.findElement(By.xpath("//a[@aria-label='Next']")).click();
-		}
-		}while(price.size()<1);
+
+					.collect(Collectors.toList());
+			price.forEach(a -> System.out.println(a)); // to perform actions on every object
+			price.forEach(a -> {
+				a = a + "Maruthi";
+				System.out.println(a);
+			});
+			price.forEach(System.out::println); // to print the Groups of objects
+			if (price.size() < 1) {
+				driver.findElement(By.xpath("//a[@aria-label='Next']")).click();
+			}
+		} while (price.size() < 1);
 	}
 
 	private static String getpriceveggie(WebElement s) {
-		
-		String pricevalue=s.findElement(By.xpath("following-sibling::td[1]")).getText();
+
+		String pricevalue = s.findElement(By.xpath("following-sibling::td[1]")).getText();
 		return pricevalue;
 	}
 
